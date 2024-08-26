@@ -2,8 +2,9 @@ class Stormchecker < Formula
   desc "Modern probabilistic model checker"
   homepage "https://www.stormchecker.org"
   # version is extracted from url
-  url "https://github.com/moves-rwth/storm/archive/1.8.1.tar.gz"
-  sha256 "13de6e7816f2b796db3557ac6b058e2ccab9cd129e243cfce93dd7cdd82f3ee1"
+  url "https://github.com/moves-rwth/storm.git",
+      tag: "1.9.0",
+      revision: "5d5ebe4c13541e60def41886b676298d2e3a75b4"
   license "GPL-3.0-only"
 
   head "https://github.com/moves-rwth/storm.git", using: :git, branch: "master"
