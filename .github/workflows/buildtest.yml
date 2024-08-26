@@ -27,4 +27,4 @@ jobs:
         run: |
           brew install --build-from-source ./Formula/stormchecker.rb
       - name: Run Storm
-        run: storm --version | grep 'with flags .* -O3' || (echo \"Error: Missing flag \'-O3\' for release build.\" && false)
+        run: storm --version | grep 'with flags .* -O3'
