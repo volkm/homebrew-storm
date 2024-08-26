@@ -1,0 +1,30 @@
+name: Build Homebrew
+# Builds and tests Storm's homebrew installation
+
+on:
+  # needed to trigger the workflow manually
+  workflow_dispatch:
+  pull_request:
+  push:
+
+env:
+  # GitHub runners currently have 4 cores
+  NR_JOBS: "4"
+
+jobs:
+  # Build Homebrew formula
+  build:
+    name: Build
+    runs-on: macos-latest
+
+    steps:
+      - name: Git clone
+        uses: actions/checkout@v4
+      - name: Tap formula
+        run: |
+          brew tap moves-rwth/storn
+      - name: Build Storm from Homebrew formula
+        run: |
+          brew install --build-from-source ./Formula/stormchecker.rb
+      - name: Run Storm
+        run: storm --version | grep 'with flags .* -O3' || (echo \"Error: Missing flag \'-O3\' for release build.\" && false)
