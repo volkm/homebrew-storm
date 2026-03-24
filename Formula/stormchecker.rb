@@ -37,6 +37,7 @@ class Stormchecker < Formula
       -DCMAKE_BUILD_TYPE=RELEASE
       -DSTORM_COMPILE_WITH_CCACHE=OFF
       -DSTORM_BUILD_TESTS=OFF
+      -DFETCHCONTENT_FULLY_DISCONNECTED=ON
       -DFETCHCONTENT_SOURCE_DIR_CARL=fetched_deps/carl-storm
       -DFETCHCONTENT_SOURCE_DIR_SYLVANFETCH=resources/3rdparty/sylvan
     ]
