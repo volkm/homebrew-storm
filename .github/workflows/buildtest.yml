@@ -70,7 +70,7 @@ jobs:
           mkdir build
           cd build
           cmake -DNEVER_FETCH_STORM=TRUE ..
-          make -j ${NR_JOBS}
+          make -j "${NR_JOBS}"
       - name: Run starter project
         working-directory: ./storm-starter
         run: ./build/bin/starter-project examples/die.pm examples/die.pctl
