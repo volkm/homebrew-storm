@@ -21,8 +21,8 @@ class Stormchecker < Formula
 
   # Additional dependencies (usually obtained via FetchContent)
   resource "carl-storm" do
-    url "https://github.com/volkm/carl-storm/archive/refs/tags/14.44.tar.gz"
-    sha256 "c43377e2d27db6e2e44655577186cf194e58ddc90a49d637f7e81ef77c781096"
+    url "https://github.com/volkm/carl-storm/archive/refs/tags/14.46.tar.gz"
+    sha256 "dd259db7c3d6ff5eea80089cc838f0765650d11c0751631a3a8773d73c16657e"
   end
 
   def install
