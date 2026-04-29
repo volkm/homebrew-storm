@@ -1,8 +1,8 @@
 class Stormchecker < Formula
   desc "Modern probabilistic model checker"
   homepage "https://www.stormchecker.org"
-  url "https://github.com/volkm/storm/archive/refs/tags/1.42.2.tar.gz"
-  sha256 "84cde9831af5948aa00cc1908a9fd7a690a6058e9029460349c053dbcf69f4ce"
+  url "https://github.com/volkm/storm/archive/refs/tags/1.42.3.tar.gz"
+  sha256 "0abf546ce8acc2e6f673f93f1e800b9bfcdb201a434f9192dca44b885ffef097"
   license "GPL-3.0-only"
   head "https://github.com/volkm/storm.git", using: :git, branch: "master"
 
@@ -21,8 +21,8 @@ class Stormchecker < Formula
 
   # Additional dependencies (usually obtained via FetchContent)
   resource "carl-storm" do
-    url "https://github.com/volkm/carl-storm/archive/refs/tags/14.43.tar.gz"
-    sha256 "e8daab75d093971f2f246c896b5159b369752c7bf4f86e8eae57f899e173c376"
+    url "https://github.com/volkm/carl-storm/archive/refs/tags/14.44.tar.gz"
+    sha256 "c43377e2d27db6e2e44655577186cf194e58ddc90a49d637f7e81ef77c781096"
   end
 
   def install
