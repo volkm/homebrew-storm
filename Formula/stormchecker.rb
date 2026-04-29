@@ -1,8 +1,8 @@
 class Stormchecker < Formula
   desc "Modern probabilistic model checker"
   homepage "https://www.stormchecker.org"
-  url "https://github.com/stormchecker/storm/archive/refs/tags/1.12.0.tar.gz"
-  sha256 "7bfda9c2f8189391c1fe37893bb5b4a36642fca6aebc3d4fa7db5574f5ed8f5b"
+  url "https://github.com/volkm/storm/archive/refs/tags/1.42.4.tar.gz"
+  sha256 "998c68916cd92e152e93de5e262a01c20783d8df0ed2ffae2681531f2a6bb691"
   license "GPL-3.0-only"
   head "https://github.com/stormchecker/storm.git", using: :git, branch: "master"
 
