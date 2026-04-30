@@ -6,6 +6,15 @@ class Stormchecker < Formula
   license "GPL-3.0-only"
   head "https://github.com/stormchecker/storm.git", using: :git, branch: "master"
 
+  bottle do
+    root_url "https://github.com/volkm/homebrew-storm/releases/download/stormchecker-1.42.6"
+    sha256 cellar: :any,                 arm64_tahoe:   "89ba44f8ce7bfba5b3feb7eaf1cf25f7361d6d25deaca9bd47373229fae0a249"
+    sha256 cellar: :any,                 arm64_sequoia: "33d8428da1af81010b49c2fda074822aa7437b63c779746959eba068e35a90c1"
+    sha256 cellar: :any,                 arm64_sonoma:  "3bba21e1ab7034e73fe2f97031feead013ade6be4b4c9430934a81b3036ece5f"
+    sha256 cellar: :any_skip_relocation, arm64_linux:   "cdedfc015d8778a2d42c7ed5bebf3a68578ef3969db5fcf4efe624546f047966"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "9b03521833acaab7bbdc881de8f330db4ecf1d21ab3d3997a207c3260389fa6b"
+  end
+
   depends_on "automake" => :build
   depends_on "cmake" => :build
   depends_on "boost"
